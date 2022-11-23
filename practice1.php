@@ -58,7 +58,13 @@ echo ucfirst(strtolower($a));
 strlen - считает количество символов в строке (в байтах (в кирилице 1 символ = 2 байтам))*/
 echo '<br>2.1<br>';
 $password = 3434;
-echo ((strlen($password) < 6) ? "пароль не подходит" : ((strlen($password) < 10) ? "пароль подходит" : "пароль не подходит"));
+if ((strlen($password))> 5) && ((strlen($password))< 10 ){
+    echo 'Пароль подходит';
+} else {
+    echo 'Пароль не подходит';
+}
+//$password = 3434;
+//echo ((strlen($password) < 6) ? "пароль не подходит" : ((strlen($password) < 10) ? "пароль подходит" : "пароль не подходит"));
 
 
 
